@@ -1,0 +1,293 @@
+{
+  "downloaded": "2026-10-03",
+  "images": [
+    {
+      "kind": "photo",
+      "filename": "estate-hero-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/elegant-mansion-exterior-with-lush-garden-36966338/",
+      "actual_download_url": "https://images.pexels.com/photos/36966338/pexels-photo-36966338.jpeg",
+      "creator": "Neville Hawkins",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 3269,
+        "height": 1844
+      },
+      "bytes": 1069808,
+      "notes": "Wide hero; pale cream manor, lawn, wisteria; good 16:9 crop.",
+      "property_person_restrictions": "No people, visible logos or separate artworks. Building/property release status not exposed by Pexels; use as fictional demo imagery without implying endorsement.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "estate-hero-original.jpg",
+      "id": "maison-vielle-estate",
+      "category": "estate",
+      "usage": "Hero, gallery and inquiry",
+      "widths": [
+        480,
+        768,
+        1200,
+        1600,
+        2000
+      ],
+      "avifQuality": 55,
+      "webpQuality": 80
+    },
+    {
+      "kind": "photo",
+      "filename": "stone-arch-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/elegant-stone-archway-with-lush-foliage-30196212/",
+      "actual_download_url": "https://images.pexels.com/photos/30196212/pexels-photo-30196212.jpeg",
+      "creator": "Manish Jangid",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 2268,
+        "height": 4032
+      },
+      "bytes": 1951585,
+      "notes": "Portrait architectural detail; warm pale stone, foliage and deep shadows.",
+      "property_person_restrictions": "No people or visible commercial marks. Ornamental architectural carving appears on facade. Property release status not exposed by Pexels.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "stone-arch-original.jpg",
+      "id": "estate-architecture",
+      "category": "estate",
+      "usage": "Estate story and gallery",
+      "widths": [
+        480,
+        768,
+        1200
+      ],
+      "avifQuality": 55,
+      "webpQuality": 80
+    },
+    {
+      "kind": "photo",
+      "filename": "dining-hall-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/two-chandelier-hanging-in-a-room-2504913/",
+      "actual_download_url": "https://images.pexels.com/photos/2504913/pexels-photo-2504913.jpeg",
+      "creator": "Rene Terp",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 4256,
+        "height": 2832
+      },
+      "bytes": 1620115,
+      "notes": "Elegant dining hall, tall windows, white linens, crystal chandeliers and traditional chairs.",
+      "property_person_restrictions": "No people or commercial marks observed. Small table stationery and indistinct framed decor visible; avoid tight crops of these. Interior/property release status not exposed by Pexels.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "dining-hall-original.jpg",
+      "id": "grand-hall",
+      "category": "spaces",
+      "usage": "Grand Hall",
+      "widths": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "avifQuality": 53,
+      "webpQuality": 80
+    },
+    {
+      "kind": "photo",
+      "filename": "garden-arches-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/serene-outdoor-garden-with-stone-archway-and-foliage-36083224/",
+      "actual_download_url": "https://images.pexels.com/photos/36083224/pexels-photo-36083224.jpeg",
+      "creator": "Ayşegül Aytören",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 4896,
+        "height": 3264
+      },
+      "bytes": 2733200,
+      "notes": "Wide sunlit stone arches and layered greenery; suitable atmosphere/gallery landscape.",
+      "property_person_restrictions": "No people or visible logos. Traditional masonry/ironwork; property release status not exposed by Pexels.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "garden-arches-original.jpg",
+      "id": "courtyard-dinner",
+      "category": "spaces",
+      "usage": "Courtyard",
+      "widths": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "avifQuality": 53,
+      "webpQuality": 80
+    },
+    {
+      "kind": "photo",
+      "filename": "formal-topiary-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/beautiful-garden-with-symmetrical-hedges-33375664/",
+      "actual_download_url": "https://images.pexels.com/photos/33375664/pexels-photo-33375664.jpeg",
+      "creator": "GStr810",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 3024,
+        "height": 4032
+      },
+      "bytes": 1850476,
+      "notes": "Formal topiary avenue; vertical composition, muted greens with blue sky.",
+      "property_person_restrictions": "Very distant visitors at the vanishing point; no recognizable faces. No visible commercial marks or separate artworks. Property release status not exposed by Pexels.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "formal-topiary-original.jpg",
+      "id": "estate-garden",
+      "category": "estate",
+      "usage": "Gardens and cinematic break",
+      "widths": [
+        480,
+        768,
+        1200,
+        1600,
+        2000
+      ],
+      "avifQuality": 55,
+      "webpQuality": 80
+    },
+    {
+      "kind": "photo",
+      "filename": "wedding-hands-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/close-up-of-bride-and-groom-hands-with-wedding-rings-on-their-fingers-12336813/",
+      "actual_download_url": "https://images.pexels.com/photos/12336813/pexels-photo-12336813.jpeg",
+      "creator": "Marina Abrosimova",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 3648,
+        "height": 5472
+      },
+      "bytes": 1545439,
+      "notes": "Anonymous ringed hands on cream bridal bouquet; restrained wedding editorial detail.",
+      "property_person_restrictions": "Hands only, no recognizable faces, tattoos or commercial marks. Do not imply the photographed couple endorses the fictional venue.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "wedding-hands-original.jpg",
+      "id": "wedding-flowers",
+      "category": "weddings",
+      "usage": "Wedding editorial and gallery",
+      "widths": [
+        480,
+        768,
+        1200
+      ],
+      "avifQuality": 53,
+      "webpQuality": 80
+    },
+    {
+      "kind": "photo",
+      "filename": "garden-table-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/wedding-table-decoration-19870053/",
+      "actual_download_url": "https://images.pexels.com/photos/19870053/pexels-photo-19870053.jpeg",
+      "creator": "Jonathan Borba",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 4000,
+        "height": 6000
+      },
+      "bytes": 1718829,
+      "notes": "Portrait outdoor table, cream linens, wicker, pale green goblets; warm companion to ivory florals.",
+      "property_person_restrictions": "No people or visible commercial marks. Small handwritten place card not identity-bearing at display size.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "garden-table-original.jpg",
+      "id": "wedding-table",
+      "category": "details",
+      "usage": "Wedding tables and gallery",
+      "widths": [
+        480,
+        768,
+        1200
+      ],
+      "avifQuality": 53,
+      "webpQuality": 82
+    },
+    {
+      "kind": "photo",
+      "filename": "ivory-florals-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/elegant-wedding-reception-table-setting-with-flowers-35985217/",
+      "actual_download_url": "https://images.pexels.com/photos/35985217/pexels-photo-35985217.jpeg",
+      "creator": "Jonathan Borba",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 6016,
+        "height": 4016
+      },
+      "bytes": 1998027,
+      "notes": "Ivory roses, glassware, sage plate; matches green and cream palette.",
+      "property_person_restrictions": "No people or logos. Menu card includes a decorative monogram; use upper floral-focused crop if avoiding all lettering.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "ivory-florals-original.jpg",
+      "id": "ivory-florals",
+      "category": "details",
+      "usage": "Floral gallery detail",
+      "widths": [
+        480,
+        768,
+        1200
+      ],
+      "avifQuality": 53,
+      "webpQuality": 82
+    },
+    {
+      "kind": "photo",
+      "filename": "estate-hero-original.jpg",
+      "source_page_url": "https://www.pexels.com/photo/elegant-mansion-exterior-with-lush-garden-36966338/",
+      "actual_download_url": "https://images.pexels.com/photos/36966338/pexels-photo-36966338.jpeg",
+      "creator": "Neville Hawkins",
+      "license": "Pexels License — Free",
+      "license_url": "https://www.pexels.com/license/",
+      "original_dimensions": {
+        "width": 3269,
+        "height": 1844
+      },
+      "bytes": 1069808,
+      "notes": "Wide hero; pale cream manor, lawn, wisteria; good 16:9 crop.",
+      "property_person_restrictions": "No people, visible logos or separate artworks. Building/property release status not exposed by Pexels; use as fictional demo imagery without implying endorsement.",
+      "verification": "Source asset page displayed Free/Free to use, official Pexels License read before original download; local image inspected.",
+      "originalFilename": "estate-hero-original.jpg",
+      "id": "maison-vielle-estate-mobile",
+      "category": "hero",
+      "usage": "Portrait mobile hero",
+      "widths": [
+        480,
+        768
+      ],
+      "avifQuality": 55,
+      "webpQuality": 80,
+      "crop": {
+        "left": 1100,
+        "top": 0,
+        "width": 1024,
+        "height": 1844
+      }
+    }
+  ],
+  "video": {
+    "kind": "video",
+    "filename": "foliage-original.mp4",
+    "source_page_url": "https://www.pexels.com/video/close-up-shot-of-leaves-2519222/",
+    "actual_download_url": "https://videos.pexels.com/video-files/2519222/2519222-uhd_4096_2160_24fps.mp4",
+    "creator": "James Cheney",
+    "license": "Pexels License — Free",
+    "license_url": "https://www.pexels.com/license/",
+    "original_dimensions": {
+      "width": 4096,
+      "height": 2160
+    },
+    "duration_seconds": 11.720042,
+    "bytes": 34427414,
+    "notes": "Sunlit leaves; 4K decorative atmosphere clip. Source is 12 seconds. Integrator may mute, compress and loop.",
+    "property_person_restrictions": "Foliage only; no people, property identity, commercial marks or artworks.",
+    "verification": "Source asset page displays Free and 4096×2160, 0:12, 23.98 fps. Actual download URL resolved from source-page download button. ffprobe confirms 4096×2160 H.264, 11.720042 seconds, 24000/1001 fps; sampled frame visually inspected.",
+    "frame_rate": "24000/1001"
+  },
+  "licenseReview": {
+    "photo_and_video_license": "https://www.pexels.com/license/",
+    "commercial_template_use": "Pexels explicitly permits imagery on websites, apps, and templates you sell. Attribution is appreciated but not required. Modification is allowed.",
+    "limits": "Do not resell unaltered media as standalone stock, imply endorsement, misuse identifiable people, or use assets as a trademark. Third-party property/person rights are not guaranteed by the copyright license.",
+    "template_presentation": "The collection depicts multiple places and events; present as fictional demonstration imagery rather than evidence of a real venue."
+  }
+}

@@ -1,0 +1,60 @@
+# Root .gitignore for the templates monorepo.
+# Patterns without a leading slash match at any depth, so they cover every
+# template folder. Put template-specific rules in that template's own .gitignore.
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build output and framework caches
+.next/
+.vinext/
+out/
+dist/
+build-output/
+.turbo/
+.vercel/
+.wrangler/
+.cache/
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
+test-results/
+playwright-report/
+
+# Env files (keep committed examples)
+.env*
+!.env.example
+!.env.sample
+
+# Local tool and runtime state
+.sites-runtime/
+.agents/
+.codex/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Secrets
+*.pem
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp

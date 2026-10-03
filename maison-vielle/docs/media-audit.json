@@ -1,0 +1,467 @@
+[
+  {
+    "id": "maison-vielle-estate",
+    "usage": "Hero, gallery and inquiry",
+    "originalBytes": 1069808,
+    "originalWidth": 3269,
+    "originalHeight": 1844,
+    "files": [
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-480.avif",
+        "bytes": 14719,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-480.webp",
+        "bytes": 24600,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-768.avif",
+        "bytes": 37636,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-768.webp",
+        "bytes": 62336,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-1200.avif",
+        "bytes": 91774,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-1200.webp",
+        "bytes": 152820,
+        "width": 1200,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-1600.avif",
+        "bytes": 155208,
+        "width": 1600,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-1600.webp",
+        "bytes": 262526,
+        "width": 1600,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-2000.avif",
+        "bytes": 224315,
+        "width": 2000,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/maison-vielle-estate-2000.webp",
+        "bytes": 387376,
+        "width": 2000,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "estate-architecture",
+    "usage": "Estate story and gallery",
+    "originalBytes": 1951585,
+    "originalWidth": 2268,
+    "originalHeight": 4032,
+    "files": [
+      {
+        "file": "public/media/images/estate/estate-architecture-480.avif",
+        "bytes": 66403,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-architecture-480.webp",
+        "bytes": 111080,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/estate-architecture-768.avif",
+        "bytes": 162271,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-architecture-768.webp",
+        "bytes": 268342,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/estate-architecture-1200.avif",
+        "bytes": 334228,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-architecture-1200.webp",
+        "bytes": 563018,
+        "width": 1200,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "grand-hall",
+    "usage": "Grand Hall",
+    "originalBytes": 1620115,
+    "originalWidth": 4256,
+    "originalHeight": 2832,
+    "files": [
+      {
+        "file": "public/media/images/spaces/grand-hall-480.avif",
+        "bytes": 15055,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/grand-hall-480.webp",
+        "bytes": 27156,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/spaces/grand-hall-768.avif",
+        "bytes": 31891,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/grand-hall-768.webp",
+        "bytes": 57506,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/spaces/grand-hall-1200.avif",
+        "bytes": 67234,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/grand-hall-1200.webp",
+        "bytes": 120916,
+        "width": 1200,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/spaces/grand-hall-1600.avif",
+        "bytes": 108846,
+        "width": 1600,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/grand-hall-1600.webp",
+        "bytes": 194078,
+        "width": 1600,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "courtyard-dinner",
+    "usage": "Courtyard",
+    "originalBytes": 2733200,
+    "originalWidth": 4896,
+    "originalHeight": 3264,
+    "files": [
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-480.avif",
+        "bytes": 19808,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-480.webp",
+        "bytes": 36546,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-768.avif",
+        "bytes": 48989,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-768.webp",
+        "bytes": 91778,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-1200.avif",
+        "bytes": 114767,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-1200.webp",
+        "bytes": 211500,
+        "width": 1200,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-1600.avif",
+        "bytes": 190309,
+        "width": 1600,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/spaces/courtyard-dinner-1600.webp",
+        "bytes": 349504,
+        "width": 1600,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "estate-garden",
+    "usage": "Gardens and cinematic break",
+    "originalBytes": 1850476,
+    "originalWidth": 3024,
+    "originalHeight": 4032,
+    "files": [
+      {
+        "file": "public/media/images/estate/estate-garden-480.avif",
+        "bytes": 43594,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-480.webp",
+        "bytes": 73144,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-768.avif",
+        "bytes": 108776,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-768.webp",
+        "bytes": 193338,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-1200.avif",
+        "bytes": 233855,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-1200.webp",
+        "bytes": 430320,
+        "width": 1200,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-1600.avif",
+        "bytes": 350019,
+        "width": 1600,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-1600.webp",
+        "bytes": 653668,
+        "width": 1600,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-2000.avif",
+        "bytes": 455857,
+        "width": 2000,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/estate/estate-garden-2000.webp",
+        "bytes": 838240,
+        "width": 2000,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "wedding-flowers",
+    "usage": "Wedding editorial and gallery",
+    "originalBytes": 1545439,
+    "originalWidth": 3648,
+    "originalHeight": 5472,
+    "files": [
+      {
+        "file": "public/media/images/weddings/wedding-flowers-480.avif",
+        "bytes": 20544,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/weddings/wedding-flowers-480.webp",
+        "bytes": 30706,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/weddings/wedding-flowers-768.avif",
+        "bytes": 43235,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/weddings/wedding-flowers-768.webp",
+        "bytes": 64320,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/weddings/wedding-flowers-1200.avif",
+        "bytes": 86666,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/weddings/wedding-flowers-1200.webp",
+        "bytes": 121984,
+        "width": 1200,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "wedding-table",
+    "usage": "Wedding tables and gallery",
+    "originalBytes": 1718829,
+    "originalWidth": 4000,
+    "originalHeight": 6000,
+    "files": [
+      {
+        "file": "public/media/images/details/wedding-table-480.avif",
+        "bytes": 19551,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/details/wedding-table-480.webp",
+        "bytes": 35482,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/details/wedding-table-768.avif",
+        "bytes": 35796,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/details/wedding-table-768.webp",
+        "bytes": 65940,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/details/wedding-table-1200.avif",
+        "bytes": 66428,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/details/wedding-table-1200.webp",
+        "bytes": 125034,
+        "width": 1200,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "ivory-florals",
+    "usage": "Floral gallery detail",
+    "originalBytes": 1998027,
+    "originalWidth": 6016,
+    "originalHeight": 4016,
+    "files": [
+      {
+        "file": "public/media/images/details/ivory-florals-480.avif",
+        "bytes": 15381,
+        "width": 480,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/details/ivory-florals-480.webp",
+        "bytes": 29338,
+        "width": 480,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/details/ivory-florals-768.avif",
+        "bytes": 30278,
+        "width": 768,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/details/ivory-florals-768.webp",
+        "bytes": 56676,
+        "width": 768,
+        "format": "webp"
+      },
+      {
+        "file": "public/media/images/details/ivory-florals-1200.avif",
+        "bytes": 54249,
+        "width": 1200,
+        "format": "avif"
+      },
+      {
+        "file": "public/media/images/details/ivory-florals-1200.webp",
+        "bytes": 97232,
+        "width": 1200,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "id": "maison-vielle-estate-mobile",
+    "usage": "Portrait mobile hero",
+    "originalBytes": 1069808,
+    "originalWidth": 3269,
+    "originalHeight": 1844,
+    "files": [
+      {
+        "file": "public/media/images/hero/maison-vielle-estate-mobile-480.avif",
+        "width": 480,
+        "format": "avif",
+        "bytes": 46028
+      },
+      {
+        "file": "public/media/images/hero/maison-vielle-estate-mobile-480.webp",
+        "width": 480,
+        "format": "webp",
+        "bytes": 78734
+      },
+      {
+        "file": "public/media/images/hero/maison-vielle-estate-mobile-768.avif",
+        "width": 768,
+        "format": "avif",
+        "bytes": 95831
+      },
+      {
+        "file": "public/media/images/hero/maison-vielle-estate-mobile-768.webp",
+        "width": 768,
+        "format": "webp",
+        "bytes": 169646
+      }
+    ]
+  }
+]
