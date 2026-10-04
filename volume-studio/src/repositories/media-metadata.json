@@ -1,0 +1,38 @@
+{
+  "casa": {
+    "width": 1920,
+    "height": 1280
+  },
+  "monolith": {
+    "width": 1920,
+    "height": 1280
+  },
+  "axis": {
+    "width": 1920,
+    "height": 2878
+  },
+  "north": {
+    "width": 1920,
+    "height": 1440
+  },
+  "living": {
+    "width": 1920,
+    "height": 1281
+  },
+  "detail": {
+    "width": 1920,
+    "height": 2909
+  },
+  "stair": {
+    "width": 1920,
+    "height": 1280
+  },
+  "bath": {
+    "width": 1920,
+    "height": 1281
+  },
+  "light": {
+    "width": 1920,
+    "height": 1280
+  }
+}

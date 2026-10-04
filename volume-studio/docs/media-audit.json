@@ -1,0 +1,362 @@
+[
+  {
+    "file": "public/media/images/casa-480.avif",
+    "bytes": 9078
+  },
+  {
+    "file": "public/media/images/casa-480.webp",
+    "bytes": 16388
+  },
+  {
+    "file": "public/media/images/casa-768.avif",
+    "bytes": 17380
+  },
+  {
+    "file": "public/media/images/casa-768.webp",
+    "bytes": 31328
+  },
+  {
+    "file": "public/media/images/casa-1024.avif",
+    "bytes": 26477
+  },
+  {
+    "file": "public/media/images/casa-1024.webp",
+    "bytes": 48232
+  },
+  {
+    "file": "public/media/images/casa-1440.avif",
+    "bytes": 44284
+  },
+  {
+    "file": "public/media/images/casa-1440.webp",
+    "bytes": 82018
+  },
+  {
+    "file": "public/media/images/casa-1920.avif",
+    "bytes": 72482
+  },
+  {
+    "file": "public/media/images/casa-1920.webp",
+    "bytes": 138946
+  },
+  {
+    "file": "public/media/images/monolith-480.avif",
+    "bytes": 10136
+  },
+  {
+    "file": "public/media/images/monolith-480.webp",
+    "bytes": 18832
+  },
+  {
+    "file": "public/media/images/monolith-768.avif",
+    "bytes": 20846
+  },
+  {
+    "file": "public/media/images/monolith-768.webp",
+    "bytes": 38910
+  },
+  {
+    "file": "public/media/images/monolith-1024.avif",
+    "bytes": 32666
+  },
+  {
+    "file": "public/media/images/monolith-1024.webp",
+    "bytes": 58780
+  },
+  {
+    "file": "public/media/images/monolith-1440.avif",
+    "bytes": 53229
+  },
+  {
+    "file": "public/media/images/monolith-1440.webp",
+    "bytes": 95028
+  },
+  {
+    "file": "public/media/images/monolith-1920.avif",
+    "bytes": 82741
+  },
+  {
+    "file": "public/media/images/monolith-1920.webp",
+    "bytes": 144680
+  },
+  {
+    "file": "public/media/images/axis-480.avif",
+    "bytes": 17240
+  },
+  {
+    "file": "public/media/images/axis-480.webp",
+    "bytes": 27556
+  },
+  {
+    "file": "public/media/images/axis-768.avif",
+    "bytes": 35637
+  },
+  {
+    "file": "public/media/images/axis-768.webp",
+    "bytes": 55688
+  },
+  {
+    "file": "public/media/images/axis-1024.avif",
+    "bytes": 57411
+  },
+  {
+    "file": "public/media/images/axis-1024.webp",
+    "bytes": 88226
+  },
+  {
+    "file": "public/media/images/axis-1440.avif",
+    "bytes": 101125
+  },
+  {
+    "file": "public/media/images/axis-1440.webp",
+    "bytes": 151956
+  },
+  {
+    "file": "public/media/images/axis-1920.avif",
+    "bytes": 179496
+  },
+  {
+    "file": "public/media/images/axis-1920.webp",
+    "bytes": 247242
+  },
+  {
+    "file": "public/media/images/north-480.avif",
+    "bytes": 12741
+  },
+  {
+    "file": "public/media/images/north-480.webp",
+    "bytes": 24290
+  },
+  {
+    "file": "public/media/images/north-768.avif",
+    "bytes": 25735
+  },
+  {
+    "file": "public/media/images/north-768.webp",
+    "bytes": 49674
+  },
+  {
+    "file": "public/media/images/north-1024.avif",
+    "bytes": 40224
+  },
+  {
+    "file": "public/media/images/north-1024.webp",
+    "bytes": 77904
+  },
+  {
+    "file": "public/media/images/north-1440.avif",
+    "bytes": 69126
+  },
+  {
+    "file": "public/media/images/north-1440.webp",
+    "bytes": 129928
+  },
+  {
+    "file": "public/media/images/north-1920.avif",
+    "bytes": 112210
+  },
+  {
+    "file": "public/media/images/north-1920.webp",
+    "bytes": 209236
+  },
+  {
+    "file": "public/media/images/living-480.avif",
+    "bytes": 9019
+  },
+  {
+    "file": "public/media/images/living-480.webp",
+    "bytes": 15536
+  },
+  {
+    "file": "public/media/images/living-768.avif",
+    "bytes": 17566
+  },
+  {
+    "file": "public/media/images/living-768.webp",
+    "bytes": 31276
+  },
+  {
+    "file": "public/media/images/living-1024.avif",
+    "bytes": 27696
+  },
+  {
+    "file": "public/media/images/living-1024.webp",
+    "bytes": 50374
+  },
+  {
+    "file": "public/media/images/living-1440.avif",
+    "bytes": 47772
+  },
+  {
+    "file": "public/media/images/living-1440.webp",
+    "bytes": 89218
+  },
+  {
+    "file": "public/media/images/living-1920.avif",
+    "bytes": 81330
+  },
+  {
+    "file": "public/media/images/living-1920.webp",
+    "bytes": 148098
+  },
+  {
+    "file": "public/media/images/detail-480.avif",
+    "bytes": 11792
+  },
+  {
+    "file": "public/media/images/detail-480.webp",
+    "bytes": 17466
+  },
+  {
+    "file": "public/media/images/detail-768.avif",
+    "bytes": 24035
+  },
+  {
+    "file": "public/media/images/detail-768.webp",
+    "bytes": 37032
+  },
+  {
+    "file": "public/media/images/detail-1024.avif",
+    "bytes": 38061
+  },
+  {
+    "file": "public/media/images/detail-1024.webp",
+    "bytes": 57690
+  },
+  {
+    "file": "public/media/images/detail-1440.avif",
+    "bytes": 65888
+  },
+  {
+    "file": "public/media/images/detail-1440.webp",
+    "bytes": 97232
+  },
+  {
+    "file": "public/media/images/detail-1920.avif",
+    "bytes": 108820
+  },
+  {
+    "file": "public/media/images/detail-1920.webp",
+    "bytes": 155814
+  },
+  {
+    "file": "public/media/images/stair-480.avif",
+    "bytes": 8518
+  },
+  {
+    "file": "public/media/images/stair-480.webp",
+    "bytes": 13488
+  },
+  {
+    "file": "public/media/images/stair-768.avif",
+    "bytes": 18842
+  },
+  {
+    "file": "public/media/images/stair-768.webp",
+    "bytes": 33156
+  },
+  {
+    "file": "public/media/images/stair-1024.avif",
+    "bytes": 32715
+  },
+  {
+    "file": "public/media/images/stair-1024.webp",
+    "bytes": 62242
+  },
+  {
+    "file": "public/media/images/stair-1440.avif",
+    "bytes": 66893
+  },
+  {
+    "file": "public/media/images/stair-1440.webp",
+    "bytes": 131018
+  },
+  {
+    "file": "public/media/images/stair-1920.avif",
+    "bytes": 143213
+  },
+  {
+    "file": "public/media/images/stair-1920.webp",
+    "bytes": 229266
+  },
+  {
+    "file": "public/media/images/bath-480.avif",
+    "bytes": 7781
+  },
+  {
+    "file": "public/media/images/bath-480.webp",
+    "bytes": 14134
+  },
+  {
+    "file": "public/media/images/bath-768.avif",
+    "bytes": 16644
+  },
+  {
+    "file": "public/media/images/bath-768.webp",
+    "bytes": 30282
+  },
+  {
+    "file": "public/media/images/bath-1024.avif",
+    "bytes": 28267
+  },
+  {
+    "file": "public/media/images/bath-1024.webp",
+    "bytes": 50028
+  },
+  {
+    "file": "public/media/images/bath-1440.avif",
+    "bytes": 50959
+  },
+  {
+    "file": "public/media/images/bath-1440.webp",
+    "bytes": 91282
+  },
+  {
+    "file": "public/media/images/bath-1920.avif",
+    "bytes": 92476
+  },
+  {
+    "file": "public/media/images/bath-1920.webp",
+    "bytes": 153650
+  },
+  {
+    "file": "public/media/images/light-480.avif",
+    "bytes": 6941
+  },
+  {
+    "file": "public/media/images/light-480.webp",
+    "bytes": 11644
+  },
+  {
+    "file": "public/media/images/light-768.avif",
+    "bytes": 13320
+  },
+  {
+    "file": "public/media/images/light-768.webp",
+    "bytes": 22940
+  },
+  {
+    "file": "public/media/images/light-1024.avif",
+    "bytes": 20942
+  },
+  {
+    "file": "public/media/images/light-1024.webp",
+    "bytes": 35874
+  },
+  {
+    "file": "public/media/images/light-1440.avif",
+    "bytes": 33897
+  },
+  {
+    "file": "public/media/images/light-1440.webp",
+    "bytes": 59116
+  },
+  {
+    "file": "public/media/images/light-1920.avif",
+    "bytes": 57026
+  },
+  {
+    "file": "public/media/images/light-1920.webp",
+    "bytes": 94690
+  }
+]
