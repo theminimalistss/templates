@@ -1,11 +1,9 @@
-import { useMotion } from "../../hooks/useMotion";
 import { Meta } from "../components/Meta";
 import { SectionLabel } from "../components/SectionLabel";
 import { ServicesList } from "../sections/ServicesList";
 import { Process } from "../sections/Process";
 import { ContactCTA } from "../sections/ContactCTA";
 export default function ServicesPage() {
-  useMotion();
   return (
     <>
       <Meta
@@ -15,7 +13,7 @@ export default function ServicesPage() {
       />
       <section className="page-intro section-pad">
         <SectionLabel number="01—05">SCOPE OF PRACTICE</SectionLabel>
-        <h1>
+        <h1 data-scroll-heading>
           FROM SPACE
           <br />
           TO DETAIL.

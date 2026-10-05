@@ -1,18 +1,11 @@
-import { useEffect } from "react";
+import { Suspense } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import { useRouteMotion } from "../../hooks/useRouteMotion";
+import { RouteScene } from "./RouteScene";
 import { site } from "../../config/site";
 export function Layout() {
-  useRouteMotion();
-  const { pathname, hash } = useLocation();
-  useEffect(() => {
-    if (!hash) {
-      window.scrollTo({ top: 0, behavior: "instant" });
-      document.getElementById("main")?.focus({ preventScroll: true });
-    }
-  }, [pathname, hash]);
+  const { pathname } = useLocation();
   return (
     <>
       <a className="skip-link" href="#main">
@@ -20,14 +13,18 @@ export function Layout() {
       </a>
       <div id="top" />
       <Header />
-      <div className="intro" aria-hidden="true">
-        <span>
-          VOLUME<sup>01</sup>
-        </span>
-        <i />
-      </div>
       <main id="main" tabIndex={-1}>
-        <Outlet />
+        <Suspense
+          fallback={
+            <div className="route-loading" role="status">
+              VOLUME<span>OPENING SPACE…</span>
+            </div>
+          }
+        >
+          <RouteScene key={pathname}>
+            <Outlet />
+          </RouteScene>
+        </Suspense>
       </main>
       <Footer />
       <script type="application/ld+json">

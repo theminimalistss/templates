@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "../ui/layouts/Layout";
 const Home = lazy(() => import("../ui/pages/HomePage"));
@@ -12,26 +12,18 @@ const Contact = lazy(() => import("../ui/pages/ContactPage"));
 const NotFound = lazy(() => import("../ui/pages/NotFoundPage"));
 export function AppRoutes() {
   return (
-    <Suspense
-      fallback={
-        <div className="route-loading" role="status">
-          VOLUME<span>OPENING SPACE…</span>
-        </div>
-      }
-    >
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="studio" element={<Studio />} />
-          <Route path="work" element={<Work />} />
-          <Route path="work/:slug" element={<Project />} />
-          <Route path="services" element={<Services />} />
-          <Route path="journal" element={<Journal />} />
-          <Route path="journal/:slug" element={<Article />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </Suspense>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="studio" element={<Studio />} />
+        <Route path="work" element={<Work />} />
+        <Route path="work/:slug" element={<Project />} />
+        <Route path="services" element={<Services />} />
+        <Route path="journal" element={<Journal />} />
+        <Route path="journal/:slug" element={<Article />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }

@@ -9,7 +9,7 @@ VOLUME uses React 19, TypeScript and Vite. The project follows **repository → 
 | Hooks | React-facing domain access, form state, browser motion/audio lifecycle | `src/hooks/` |
 | UI | Semantic layouts, responsive compositions and controls | `src/ui/` |
 
-UI imports domain hooks, types and public configuration. It never imports repositories or services. Browser effects belong to hooks; their observers, listeners, frames and audio are cleaned up. Pure presentation text remains with its section.
+UI imports domain hooks, types and public configuration. It never imports repositories or services. Browser effects belong to hooks; their observers, listeners, frames and audio are cleaned up. Pure presentation text remains with its section. Hero entrance readiness, slideshow timing, media preloading and pointer depth each have a focused lifecycle hook. The hero uses separate transform containers for its entrance, pointer/scroll depth and media transitions. `useMotion` re-registers reveal targets after route or filter changes.
 
 The contact repository implements `ContactRepository.prepare`. The default returns a text artifact without network delivery or storage. A future provider must implement a server endpoint; keep secrets on the server, validate again, rate-limit requests and return honest success/error states. Do not rename the current action “Send” until delivery exists.
 

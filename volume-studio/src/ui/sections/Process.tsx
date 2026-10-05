@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
+import { ProcessDiagram } from "../components/ProcessDiagram";
 import { SectionLabel } from "../components/SectionLabel";
 const stages = [
   {
@@ -46,7 +47,7 @@ export function Process() {
   return (
     <section className="process section-pad" ref={ref}>
       <SectionLabel number="06">HOW WE WORK</SectionLabel>
-      <div className="process-header">
+      <div className="process-header" data-reveal="rise">
         <h2>
           A CONSIDERED
           <br />
@@ -99,22 +100,19 @@ export function Process() {
         role="tabpanel"
         aria-labelledby={`stage-tab-${active}`}
       >
-        <svg
-          viewBox="0 0 460 180"
-          aria-hidden="true"
-          className={`process-diagram stage-${active}`}
-        >
-          <path
-            d="M30 145h400M70 160V25M215 160V15M390 160V25"
-            className="diagram-guides"
-          />
-          <path d="m90 125 115-70 150 40-115 70Zm0 0V50l115-35v40m0-40 150 40v40M240 165V85L90 50m150 35 115-30M205 15v75l-115 35" />
-          <circle cx="205" cy="55" r={active === 0 ? 28 : 8} />
-          <path d="m300 20 50 0m-25-10v20" />
-        </svg>
-        <div className="process-description">
-          <span className="process-numeral">0{active + 1}</span>
-          <p>{stages[active].copy}</p>
+        <ProcessDiagram stage={active} />
+        <div className="process-description-stack">
+          {stages.map((stage, index) => (
+            <div
+              className="process-description"
+              key={stage.title}
+              data-active={active === index}
+              aria-hidden={active !== index}
+            >
+              <span className="process-numeral">0{index + 1}</span>
+              <p>{stage.copy}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

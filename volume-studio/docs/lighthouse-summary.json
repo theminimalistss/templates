@@ -1,5 +1,6 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
+  "version": "0.2.0",
   "environment": "Local production preview, macOS arm64, Chromium 153",
   "results": {
     "mobile": {

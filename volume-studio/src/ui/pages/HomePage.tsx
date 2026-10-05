@@ -1,4 +1,3 @@
-import { useMotion } from "../../hooks/useMotion";
 import { Hero } from "../sections/Hero";
 import { Manifesto } from "../sections/Manifesto";
 import { SelectedWork } from "../sections/SelectedWork";
@@ -9,7 +8,6 @@ import { JournalGrid } from "../sections/JournalGrid";
 import { ContactCTA } from "../sections/ContactCTA";
 import { Meta } from "../components/Meta";
 export default function HomePage() {
-  useMotion();
   return (
     <>
       <Meta

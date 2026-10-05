@@ -26,7 +26,7 @@ export function Philosophy() {
     else player.pause();
   }, [visible, reduced, paused]);
   return (
-    <section className="philosophy" ref={ref}>
+    <section className="philosophy" ref={ref} data-story>
       <div className="philosophy-media" data-parallax>
         <ResponsiveImage media={media} />
         {visible && !reduced && (
@@ -46,12 +46,16 @@ export function Philosophy() {
       </div>
       <div className="philosophy-content">
         <span className="micro">[ 05 ] / OUR PHILOSOPHY</span>
-        <h2 data-reveal="rise">
-          FORM
-          <br />
-          FOLLOWS
-          <br />
-          LIFE.
+        <h2 data-reveal="type" data-kinetic>
+          <span className="reveal-line">
+            <span>FORM</span>
+          </span>
+          <span className="reveal-line">
+            <span>FOLLOWS</span>
+          </span>
+          <span className="reveal-line">
+            <span>LIFE.</span>
+          </span>
         </h2>
         <div className="philosophy-bottom">
           <p>

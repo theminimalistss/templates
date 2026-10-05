@@ -1,10 +1,8 @@
-import { useMotion } from "../../hooks/useMotion";
 import { Meta } from "../components/Meta";
 import { SectionLabel } from "../components/SectionLabel";
 import { JournalGrid } from "../sections/JournalGrid";
 import { ContactCTA } from "../sections/ContactCTA";
 export default function JournalPage() {
-  useMotion();
   return (
     <>
       <Meta
@@ -14,7 +12,7 @@ export default function JournalPage() {
       />
       <section className="page-intro section-pad">
         <SectionLabel number="01—03">NOTES FROM THE STUDIO</SectionLabel>
-        <h1>
+        <h1 data-scroll-heading>
           THINKING
           <br />
           IN SPACE.

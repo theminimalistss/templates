@@ -8,14 +8,18 @@ export function Manifesto() {
     <section className="manifesto section-pad" id="studio">
       <SectionLabel number="02">THE STUDIO</SectionLabel>
       <div className="manifesto-grid">
-        <h2 data-reveal="rise">
-          SPACE.
-          <br />
-          <span>MATERIAL.</span>
-          <br />
-          LIGHT.
+        <h2 data-reveal="type" data-kinetic>
+          <span className="reveal-line">
+            <span>SPACE.</span>
+          </span>
+          <span className="reveal-line manifesto-muted">
+            <span>MATERIAL.</span>
+          </span>
+          <span className="reveal-line">
+            <span>LIGHT.</span>
+          </span>
         </h2>
-        <div className="manifesto-copy">
+        <div className="manifesto-copy" data-reveal="rise">
           <p>
             We create interiors defined by
             <br className="desktop-break" /> proportion, material and

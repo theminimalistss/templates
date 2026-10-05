@@ -13,7 +13,7 @@ export default function NotFoundPage() {
       />
       <section className="not-found section-pad">
         <span className="micro">404 / OUTSIDE THE PLAN</span>
-        <h1>
+        <h1 data-scroll-heading>
           UNBUILT
           <br />
           SPACE.

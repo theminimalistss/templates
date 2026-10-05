@@ -1,12 +1,10 @@
 import { useMedia } from "../../hooks/useContent";
-import { useMotion } from "../../hooks/useMotion";
 import { Meta } from "../components/Meta";
 import { ResponsiveImage } from "../components/ResponsiveImage";
 import { SectionLabel } from "../components/SectionLabel";
 import { Process } from "../sections/Process";
 import { ContactCTA } from "../sections/ContactCTA";
 export default function StudioPage() {
-  useMotion();
   const studio = useMedia("axis");
   const detail = useMedia("stair");
   return (
@@ -20,7 +18,7 @@ export default function StudioPage() {
         <SectionLabel number="01">
           INDEPENDENT IN THOUGHT. CONNECTED IN PRACTICE.
         </SectionLabel>
-        <h1>
+        <h1 data-scroll-heading>
           SPACE,
           <br />
           CONSIDERED.
@@ -40,7 +38,7 @@ export default function StudioPage() {
           </p>
         </div>
       </section>
-      <div className="studio-visual">
+      <div className="studio-visual" data-image-depth>
         <ResponsiveImage media={studio} priority />
         <span className="studio-visual-word" aria-hidden="true">
           VOLUME
@@ -54,10 +52,12 @@ export default function StudioPage() {
           MORE MEANING.
         </h2>
         <div className="studio-story-grid">
-          <ResponsiveImage
-            media={detail}
-            sizes="(max-width: 700px) 100vw, 45vw"
-          />
+          <div className="studio-detail" data-image-depth data-reveal="image">
+            <ResponsiveImage
+              media={detail}
+              sizes="(max-width: 700px) 100vw, 45vw"
+            />
+          </div>
           <div>
             <p>
               Our work begins with listening. To a place, to its light, and to

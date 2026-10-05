@@ -124,7 +124,7 @@ describe("interactive compositions", () => {
     });
     expect(first).toHaveFocus();
   });
-  it("changes featured projects without automatic rotation", async () => {
+  it("allows manual project selection and pauses automatic rotation", async () => {
     const user = userEvent.setup();
     render(<Hero />, { wrapper });
     expect(

@@ -1,3 +1,7 @@
 # Agent changelog
 
+2026-10-05 — VOLUME Studio 0.2.0: amplify hero depth; sequence media before headline; add automatic masked project transitions with pause/resume and visibility/reduced-motion handling; strengthen scroll storytelling; replace Shape/Realize with assembly and completed-interior diagrams. Fix reveal registration after project filtering. Update motion/accessibility/architecture docs, version files and visual previews. Validation: build/lint/types, 44 unit/component tests, 47 browser tests, 100% core service coverage, Lighthouse 97 mobile / 100 desktop (all other categories 100).
+
+2026-10-05 — `docs/verification.md`, `.agent/PROJECT_STATE.md`: close final verification after user commit `5003201`; rebuild and run the complete 42-test browser suite together, then restart the local preview. No application code changes.
+
 2026-10-04 — `src/`, `public/`, `scripts/`, `tests/`, project configs, `docs/`, `.agent/`, README/CHANGELOG: implement VOLUME Studio 0.1.0 from the supplied brief; original brutalist art direction, layered architecture, local media and tested responsive interactions. Fix clean-URL hydration and light-surface contrast based on browser audits. Maison Vielle retained as a read-only technical reference.

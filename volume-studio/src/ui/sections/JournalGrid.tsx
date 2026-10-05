@@ -28,7 +28,7 @@ export function JournalGrid({ standalone = false }: { standalone?: boolean }) {
             className="journal-card"
             viewTransition
           >
-            <div className="journal-image" data-reveal="image">
+            <div className="journal-image" data-reveal="image" data-image-depth>
               <ResponsiveImage
                 media={entry.image}
                 sizes="(max-width: 700px) 100vw, 33vw"

@@ -11,3 +11,5 @@
 2026-10-04 — Prerender every known route and emit both HTML aliases and directory indexes. Reason: static hosts differ in clean-URL resolution. Impact: direct-entry SEO and hydration work without an application server.
 
 2026-10-04 — Reserve `.example` domain/email and use social platform homepages until verified profile URLs are supplied. Reason: the business is fictional. Impact: configure verified destinations before publishing; no nonexistent account is claimed.
+
+2026-10-05 — Expand native motion through layered depth, cinematic masks and scroll storytelling. Reason: the user wants pronounced, coherent motion without changing the architectural identity. Impact: separate transform layers avoid conflicts; automatic hero rotation waits for its entrance, supports pause/resume and suspends for visibility, keyboard focus, manual selection and reduced motion. Shape assembles planes; Realize shows a furnished interior.

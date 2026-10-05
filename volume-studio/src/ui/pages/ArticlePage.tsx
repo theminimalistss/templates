@@ -32,9 +32,9 @@ export default function ArticlePage() {
               })}
             </time>
           </p>
-          <h1>{article.title}</h1>
+          <h1 data-scroll-heading>{article.title}</h1>
         </div>
-        <div className="article-hero">
+        <div className="article-hero" data-image-depth>
           <ResponsiveImage media={article.image} priority />
         </div>
         <div className="article-copy section-pad">

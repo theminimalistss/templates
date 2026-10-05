@@ -29,10 +29,15 @@ export function SelectedWork() {
       <div className="section-pad section-heading">
         <div>
           <SectionLabel number="03">PORTFOLIO / 2025—2026</SectionLabel>
-          <h2 data-reveal="rise">
-            SELECTED
-            <br />
-            WORK<span className="heading-count">(04)</span>
+          <h2 data-reveal="type">
+            <span className="reveal-line">
+              <span>SELECTED</span>
+            </span>
+            <span className="reveal-line">
+              <span>
+                WORK<span className="heading-count">(04)</span>
+              </span>
+            </span>
           </h2>
         </div>
         <TextLink to="/work">ALL PROJECTS</TextLink>

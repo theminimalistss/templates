@@ -21,7 +21,7 @@ export default function WorkPage() {
       />
       <section className="page-intro section-pad">
         <SectionLabel number="01—04">PROJECT INDEX / 2025—2026</SectionLabel>
-        <h1>
+        <h1 data-scroll-heading>
           OUR WORK<span className="heading-count">(04)</span>
         </h1>
         <div className="work-filter" aria-label="Filter projects">

@@ -20,7 +20,7 @@ export function ProjectCard({
       viewTransition
       className={`project-card ${className}`}
     >
-      <div className="project-photo" data-reveal="image">
+      <div className="project-photo" data-reveal="image" data-image-depth>
         <ResponsiveImage
           media={project.image}
           sizes="(max-width: 700px) 100vw, 70vw"

@@ -62,17 +62,23 @@ export default function ContactPage() {
       />
       <section className="contact-page section-pad">
         <SectionLabel number="01">LET’S BEGIN</SectionLabel>
-        <h1>
+        <h1 data-scroll-heading>
           START
           <br />A PROJECT<span>.</span>
         </h1>
         <div className="contact-grid">
           <div className="contact-aside">
-            <ResponsiveImage
-              media={image}
-              sizes="(max-width: 700px) 100vw, 35vw"
-              priority
-            />
+            <div
+              className="contact-visual"
+              data-image-depth
+              data-reveal="image"
+            >
+              <ResponsiveImage
+                media={image}
+                sizes="(max-width: 700px) 100vw, 35vw"
+                priority
+              />
+            </div>
             <p>
               Good spaces begin with
               <br />a good conversation.

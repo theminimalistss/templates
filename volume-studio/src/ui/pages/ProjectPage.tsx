@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 import { useProject } from "../../hooks/useContent";
-import { useMotion } from "../../hooks/useMotion";
 import { ResponsiveImage } from "../components/ResponsiveImage";
 import { Meta } from "../components/Meta";
 import { Arrow } from "../components/Arrow";
@@ -8,7 +7,6 @@ import NotFoundPage from "./NotFoundPage";
 export default function ProjectPage() {
   const { slug = "" } = useParams();
   const { project, next } = useProject(slug);
-  useMotion();
   if (!project) return <NotFoundPage />;
   return (
     <>
@@ -23,7 +21,7 @@ export default function ProjectPage() {
           ← BACK TO WORK
         </Link>
         <div className="project-title-line">
-          <h1>{project.title}</h1>
+          <h1 data-scroll-heading>{project.title}</h1>
           <span className="project-big-number">{project.number}</span>
         </div>
         <div className="project-hero-meta micro">
@@ -34,7 +32,7 @@ export default function ProjectPage() {
           <span>{project.year}</span>
         </div>
       </section>
-      <div className="project-hero-image">
+      <div className="project-hero-image" data-image-depth>
         <ResponsiveImage media={project.image} priority />
       </div>
       <section className="project-overview section-pad">

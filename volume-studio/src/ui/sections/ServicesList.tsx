@@ -12,8 +12,18 @@ export function ServicesList() {
       <SectionLabel number="04">OUR EXPERTISE</SectionLabel>
       <h2 data-reveal="rise">WHAT WE DO</h2>
       <div className="services-grid">
-        <div className="service-preview" key={active}>
-          <ResponsiveImage media={services[active].image} sizes="35vw" />
+        <div className="service-preview">
+          <div className="service-preview-media" data-image-depth>
+            {services.map((service, index) => (
+              <ResponsiveImage
+                key={service.number}
+                media={service.image}
+                sizes="35vw"
+                className={active === index ? "is-active" : ""}
+                decorative={active !== index}
+              />
+            ))}
+          </div>
           <span className="micro">
             {services[active].number} / {services[active].title}
           </span>
@@ -35,7 +45,10 @@ export function ServicesList() {
                 }}
               >
                 <span className="micro">{service.number}</span>
-                <span>{service.title}</span>
+                <span className="service-title">
+                  <span>{service.title}</span>
+                  <span aria-hidden="true">{service.title}</span>
+                </span>
                 <span className="service-plus">
                   {expanded === index ? "−" : "+"}
                 </span>
