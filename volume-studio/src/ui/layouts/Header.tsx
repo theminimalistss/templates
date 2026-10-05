@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { navigation } from "../../config/site";
+import { MENU_CLOSE_MS } from "../../constants/motion";
 import { Arrow } from "../components/Arrow";
 export function Header() {
   const [open, setOpen] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
+  const restoreFocus = useRef(false);
   const { pathname } = useLocation();
   useEffect(() => {
     setOpen(false);
@@ -14,14 +16,37 @@ export function Header() {
     const node = dialog.current;
     if (!node) return;
     if (open) {
-      node.showModal();
+      delete node.dataset.state;
+      if (!node.open) node.showModal();
       document.body.style.overflow = "hidden";
-    } else {
-      if (node.open) node.close();
-      document.body.style.overflow = "";
+      return () => {
+        document.body.style.overflow = "";
+      };
     }
+    document.body.style.overflow = "";
+    if (!node.open) return;
+    // Keep the modal open until its exit animation has played. Reopening
+    // mid-exit runs the cleanup, so the pending close is discarded.
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      delete node.dataset.state;
+      node.close();
+      if (restoreFocus.current) toggle.current?.focus();
+      restoreFocus.current = false;
+    };
+    node.dataset.state = "closing";
+    const exits = node.getAnimations?.({ subtree: true }) ?? [];
+    if (!exits.length) {
+      finish();
+      return;
+    }
+    const fallback = window.setTimeout(finish, MENU_CLOSE_MS + 150);
+    void Promise.allSettled(exits.map((exit) => exit.finished)).then(finish);
     return () => {
-      document.body.style.overflow = "";
+      done = true;
+      clearTimeout(fallback);
     };
   }, [open]);
   useEffect(() => {
@@ -69,7 +94,11 @@ export function Header() {
         id="mobile-menu"
         className="mobile-menu"
         aria-label="Navigation"
-        onCancel={() => setOpen(false)}
+        onCancel={(event) => {
+          event.preventDefault();
+          restoreFocus.current = true;
+          setOpen(false);
+        }}
         onClose={() => setOpen(false)}
       >
         <div className="menu-top">
@@ -78,8 +107,8 @@ export function Header() {
           </Link>
           <button
             onClick={() => {
+              restoreFocus.current = true;
               setOpen(false);
-              toggle.current?.focus();
             }}
             aria-label="CLOSE"
           >
@@ -93,6 +122,7 @@ export function Header() {
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
+                style={{ "--i": index } as CSSProperties}
                 viewTransition
               >
                 <span>0{index + 1}</span>

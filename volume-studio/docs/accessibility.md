@@ -2,7 +2,7 @@
 
 Semantic landmarks and a single page H1 establish the document structure. A skip link moves to the focusable main region. Route navigation resets position and moves focus to main. All meaningful photographs have alt text; duplicate decorative imagery and arrow graphics are hidden from assistive technology.
 
-The mobile menu is a native modal dialog: browser focus trap, Escape dismissal, background inertness, close control, focus restoration and body scroll lock. It closes on route changes and when resized to desktop.
+The mobile menu is a native modal dialog: browser focus trap, Escape dismissal, background inertness, close control, focus restoration and body scroll lock. It closes on route changes and when resized to desktop. Escape and CLOSE play a short exit animation before the dialog closes; the dialog stays modal throughout, and focus then returns to the MENU button. Reduced motion closes it instantly.
 
 Services use buttons with `aria-expanded` and associated hidden details. Process tabs support Left/Right, Home/End and roving tabindex. Filter and sound buttons expose pressed state. Gallery arrows are named. The featured slideshow starts after its entrance and has a visible pause/resume button. Manual selection and keyboard focus pause it until explicitly resumed; hovering its controls, hidden tabs and leaving the viewport suspend its timer. Automatic changes are not announced through a live region. Reduced motion disables automatic rotation while preserving manual selection.
 

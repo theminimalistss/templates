@@ -178,6 +178,72 @@
     transform: scaleX(1);
   }
 }
+/* Mobile menu: a bone shutter drops over the page and the links rise in one
+   after another. Closing reverses it; Header waits for these animations
+   (MENU_CLOSE_MS) before closing the dialog. */
+.mobile-menu[open] {
+  animation: menu-shutter-in 0.75s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+.mobile-menu[open]::backdrop {
+  animation: menu-backdrop-in 0.5s ease both;
+}
+.mobile-menu[open] :is(.menu-top, nav a),
+.mobile-menu[open] > p {
+  animation: menu-item-in 0.8s calc(0.3s + var(--i, 0) * 0.06s) var(--ease) both;
+}
+.mobile-menu[open] > p {
+  --i: 6;
+}
+.mobile-menu[data-state="closing"] {
+  animation: menu-shutter-out 0.55s 0.1s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+.mobile-menu[data-state="closing"]::backdrop {
+  animation: menu-backdrop-in 0.55s 0.1s ease reverse both;
+}
+.mobile-menu[data-state="closing"] :is(.menu-top, nav a),
+.mobile-menu[data-state="closing"] > p {
+  animation: menu-item-out 0.25s ease both;
+}
+@keyframes menu-shutter-in {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+@keyframes menu-shutter-out {
+  from {
+    clip-path: inset(0);
+  }
+  to {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+@keyframes menu-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes menu-item-in {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes menu-item-out {
+  to {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+}
 .hero-project {
   animation: hero-caption 0.6s ease both;
 }
@@ -721,6 +787,9 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  .mobile-menu::backdrop {
+    animation: none !important;
+  }
   .header > *,
   .header::after {
     opacity: 1 !important;

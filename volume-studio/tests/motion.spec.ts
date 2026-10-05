@@ -351,3 +351,32 @@ test("reduced motion skips route and scroll movement while preserving service an
     "0s",
   );
 });
+
+test("mobile menu animates open and plays its exit before closing", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  const toggle = page.getByRole("button", { name: "MENU" });
+  await toggle.click();
+  const dialog = page.locator("#mobile-menu");
+  await expect(dialog).toHaveCSS("animation-name", "menu-shutter-in");
+  await expect(dialog.locator("nav a").last()).toHaveCSS(
+    "animation-name",
+    "menu-item-in",
+  );
+  await expect(dialog.locator("nav a").last()).toHaveCSS("opacity", "1");
+  await page.keyboard.press("Escape");
+  await expect(dialog).toHaveAttribute("data-state", "closing");
+  expect(await dialog.evaluate((node: HTMLDialogElement) => node.open)).toBe(
+    true,
+  );
+  await expect(dialog).not.toBeVisible();
+  await expect(dialog).not.toHaveAttribute("data-state");
+  await expect(toggle).toBeFocused();
+  await toggle.click();
+  await dialog.getByRole("button", { name: "CLOSE" }).click();
+  await expect(dialog).toHaveAttribute("data-state", "closing");
+  await expect(dialog).not.toBeVisible();
+  await expect(toggle).toBeFocused();
+});
