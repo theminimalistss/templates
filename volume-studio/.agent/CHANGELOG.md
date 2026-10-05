@@ -1,5 +1,7 @@
 # Agent changelog
 
+2026-10-05 — VOLUME Studio 0.3.0, `src/ui/styles/motion.css`, `tests/motion.spec.ts`, docs, version files: the header joins the hero intro. The receding imagery passes across the header band, and the nav and wordmark converge from in front of the viewer on the main image's vanishing point, with the header rule drawing outward. Reduced motion and header focus fall back to a static header. Validation: build/lint/types, 44 unit/component tests, 51 of 52 browser tests, Lighthouse 97 mobile / 100 desktop (all other categories 100). The `/services` "expertise text stays revealed" test also fails without this change.
+
 2026-10-05 — VOLUME Studio 0.2.0: amplify hero depth; sequence media before headline; add automatic masked project transitions with pause/resume and visibility/reduced-motion handling; strengthen scroll storytelling; replace Shape/Realize with assembly and completed-interior diagrams. Fix reveal registration after project filtering. Update motion/accessibility/architecture docs, version files and visual previews. Validation: build/lint/types, 44 unit/component tests, 47 browser tests, 100% core service coverage, Lighthouse 97 mobile / 100 desktop (all other categories 100).
 
 2026-10-05 — `docs/verification.md`, `.agent/PROJECT_STATE.md`: close final verification after user commit `5003201`; rebuild and run the complete 42-test browser suite together, then restart the local preview. No application code changes.

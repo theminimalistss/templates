@@ -100,6 +100,84 @@
   .hero-title-word {
   animation-delay: 2.7s;
 }
+/* The header shares the hero's camera during the intro. The receding imagery may
+   pass across the header band, and the header items converge on the same
+   vanishing point (the main image) from in front of the viewer. */
+.header {
+  --hero-vp-x: 72%;
+  perspective: 900px;
+  perspective-origin: var(--hero-vp-x) calc(100% + 38svh);
+}
+:root:has(.hero[data-hero-phase="waiting"]) .header > * {
+  opacity: 0;
+}
+:root:has(.hero:not([data-hero-phase="ready"])) .header {
+  border-bottom-color: transparent;
+}
+:root:has(.hero:is([data-hero-phase="static"], [data-hero-phase="entering"]))
+  .header
+  > * {
+  animation: header-emerge 1.9s var(--emerge-delay, 0.5s)
+    cubic-bezier(0.22, 0.7, 0.12, 1) both;
+}
+:root:has(.hero:is([data-hero-phase="static"], [data-hero-phase="entering"]))
+  .header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: var(--line);
+  transform-origin: var(--hero-vp-x) 50%;
+  animation: header-rim 1.5s 1s cubic-bezier(0.22, 0.7, 0.12, 1) both;
+}
+.header-descriptor {
+  --emerge-delay: 0.56s;
+}
+.desktop-nav,
+.menu-toggle {
+  --emerge-delay: 0.62s;
+}
+.header-contact {
+  --emerge-delay: 0.68s;
+}
+.header:focus-within > * {
+  opacity: 1 !important;
+  animation: none !important;
+}
+.hero:is([data-hero-phase="static"], [data-hero-phase="entering"]) {
+  z-index: 21;
+  overflow: visible;
+  clip-path: inset(-160px 0 0);
+}
+.hero:is([data-hero-phase="static"], [data-hero-phase="entering"])
+  :is(.hero-main-image, .hero-small-image) {
+  pointer-events: none;
+}
+@keyframes header-emerge {
+  from {
+    opacity: 0;
+    transform: translateZ(420px);
+    filter: blur(6px);
+  }
+  35% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+    filter: blur(0);
+  }
+}
+@keyframes header-rim {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 .hero-project {
   animation: hero-caption 0.6s ease both;
 }
@@ -598,6 +676,9 @@
 }
 
 @media (max-width: 799px) {
+  .header {
+    --hero-vp-x: 66%;
+  }
   .hero-main-image {
     transform: translate3d(
       var(--pointer-x, 0px),
@@ -640,6 +721,23 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  .header > *,
+  .header::after {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  :root:has(.hero) .header {
+    border-bottom-color: var(--line);
+  }
+  .header::after {
+    display: none;
+  }
+  .hero[data-hero-phase] {
+    z-index: auto;
+    overflow: hidden;
+    clip-path: none;
+  }
   .hero-main-image,
   .hero-small-image,
   .hero-title,

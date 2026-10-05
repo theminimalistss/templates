@@ -8,6 +8,6 @@ Services use buttons with `aria-expanded` and associated hidden details. Process
 
 The inquiry form has persistent labels, required states, inline errors connected by `aria-describedby`, `aria-invalid`, first-error focus and a focused success announcement. Nothing is transmitted; the outcome explicitly says so.
 
-A live `prefers-reduced-motion` subscription disables motion while preserving content and controls. Sound always begins off and requires explicit interaction. The decorative film is silent, can be paused, and does not mount under reduced motion.
+A live `prefers-reduced-motion` subscription disables motion while preserving content and controls. The header's entrance is decorative: focus inside the header shows it immediately, and reduced motion keeps it static. Sound always begins off and requires explicit interaction. The decorative film is silent, can be paused, and does not mount under reduced motion.
 
 Bone-section labels and large secondary typography were adjusted following automated contrast findings. Automated axe checks support, but do not replace, manual assistive-technology review. Editorial micro-labels are small; browser zoom/reflow and clear hierarchy retain usability. Core mobile form inputs are 16px.

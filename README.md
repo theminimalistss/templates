@@ -7,7 +7,7 @@ Website templates by The Minimalist. Each folder is a complete, self-contained s
 | Template | Version | What it is | Stack |
 |---|---|---|---|
 | [Maison Vielle](maison-vielle/) | 0.2.0 | Editorial luxury wedding-estate site with a spatial WebGL hero, pinned cinematic scroll section, living gallery and inquiry brief builder. | React 19, TypeScript, Vinext/Vite, Tailwind CSS 4 |
-| [VOLUME Studio](volume-studio/) | 0.2.0 | Brutalist interior-architecture portfolio with cinematic media, layered typography, visual case studies, a horizontal gallery and a validated project brief. | React 19, TypeScript, Vite, React Router |
+| [VOLUME Studio](volume-studio/) | 0.3.0 | Brutalist interior-architecture portfolio with cinematic media, layered typography, visual case studies, a horizontal gallery and a validated project brief. | React 19, TypeScript, Vite, React Router |
 
 ## Working on a template
 

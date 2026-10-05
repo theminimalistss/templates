@@ -1,6 +1,6 @@
 # VOLUME Studio
 
-**0.2.0** · Interior architecture / Spatial design
+**0.3.0** · Interior architecture / Spatial design
 
 An original, image-led website for a fictional independent design practice. Oversized grotesk typography, warm architectural photography and exposed grids connect a dark canvas with bone-colored editorial sections.
 
@@ -34,7 +34,7 @@ Routes: `/`, `/studio`, `/services`, `/work`, `/work/:slug`, `/journal`, `/journ
 
 ## Features
 
-- Cinematic hero with staggered image-first entrances, opposing pointer depth and an automatic, pausable project slideshow.
+- Cinematic hero with staggered image-first entrances that carry the header with them, opposing pointer depth and an automatic, pausable project slideshow.
 - Scroll storytelling with masked typography, image depth, an expanding film section, one desktop horizontal gallery and mobile swipe alternative.
 - Filtered project index, visual case studies and large next-project previews.
 - Expandable services, keyboard-operated process tabs with architectural assembly and completed-interior drawings and editorial journal.
@@ -74,6 +74,6 @@ Install the browser once with `npx playwright install chromium`. The e2e suite s
 
 ## Versioning and AI handoff
 
-Semantic versioning begins at 0.1.0. Keep `package.json`, its lockfile, `VERSION`, `CHANGELOG.md` and `.agent/PROJECT_STATE.md` consistent. Local tags use `v0.2.0`; no remote release is automatic.
+Semantic versioning begins at 0.1.0. Keep `package.json`, its lockfile, `VERSION`, `CHANGELOG.md` and `.agent/PROJECT_STATE.md` consistent. Local tags use `v0.3.0`; no remote release is automatic.
 
 Before AI-assisted changes, read `.agent/PROJECT_STATE.md` and `.agent/DECISIONS.md`, inspect relevant source, make the change, run tests, then update state and `.agent/CHANGELOG.md`.

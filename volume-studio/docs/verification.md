@@ -1,4 +1,32 @@
-# Verification — 0.2.0
+# Verification — 0.3.0
+
+Verified locally on **2026-10-05**, macOS arm64. Production checks use Chromium through Playwright against the built static site at `127.0.0.1:4174`. Development preview remains available at `127.0.0.1:5174`.
+
+| Check | Result |
+| --- | --- |
+| TypeScript / ESLint / layer boundaries | Pass |
+| Vitest / Testing Library | 44 tests pass |
+| Production build | Pass; 14 prerendered routes including 404 |
+| Playwright | 51 of 52 tests pass. The `/services` check "expertise text stays revealed through hover, expansion and returning to the section" fails the same way with the 0.2.0 stylesheet, so this release did not cause it (see `.agent/TODO.md`) |
+| Header entrance | The wordmark animates with `header-emerge` while the hero enters, and the hero is unclipped. Once ready, the wordmark rests at opacity 1 with no transform, and the hero is clipped again |
+| Version | Package, lockfile, VERSION, site config, changelog and handoff updated to 0.3.0; `npm run version:check` passes |
+
+## Lighthouse
+
+| Profile | Performance | Accessibility | Best practices | SEO |
+| --- | --- | --- | --- | --- |
+| Mobile | 97 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
+
+Fresh production audits after the header entrance: mobile FCP 1.4s, LCP 2.4s, CLS 0, TBT 0ms; desktop FCP 0.4s, LCP 0.5s, CLS 0, TBT 0ms. These are local lab results, not deployed field measurements.
+
+## Visual review
+
+Captured entrance frames at 150, 600, 1100, 1700 and 2600ms, plus the settled state, at 1440×900 and 390×844. At the start, the near-camera imagery fills the header band while the header is hidden. The header items then converge from beyond the top edge, and the rule draws out from the main image. They settle before the headline appears. Previews are unchanged because the settled frame matches 0.2.0.
+
+---
+
+## Previous verification — 0.2.0
 
 Verified locally on **2026-10-05**, macOS arm64, Node 26.5.1. Production checks use Chromium 153 / Playwright 1.63 against the built static site at `127.0.0.1:4174`. Development preview remains available at `127.0.0.1:5174`.
 
@@ -17,7 +45,7 @@ Verified locally on **2026-10-05**, macOS arm64, Node 26.5.1. Production checks 
 | Network / runtime | Loaded images work; production media stays same-origin; all routes, 404 and bookmarked filter have no page errors |
 | Version | Package, lockfile, VERSION, changelog, configuration and handoff updated to 0.2.0 |
 
-## Lighthouse
+### Lighthouse
 
 | Profile | Performance | Accessibility | Best practices | SEO |
 | --- | --- | --- | --- | --- |
@@ -26,14 +54,13 @@ Verified locally on **2026-10-05**, macOS arm64, Node 26.5.1. Production checks 
 
 Fresh production audits after the motion changes: mobile FCP 1.5s, LCP 2.6s, CLS 0, TBT 0ms; desktop FCP 0.4s, LCP 0.5s, CLS 0, TBT 0ms. These are local lab results, not deployed field measurements. Summaries are in `lighthouse-summary.json`; full generated reports remain under ignored `.cache/lighthouse/`.
 
-## Visual review
+### Visual review
 
 Reviewed the initial media-only frame, settled desktop and mobile hero, pointer depth, automatic slide change, and both revised process diagrams. Confirmed no headline slivers during the first entrance frame, corrected construction guides to stay inside their drawing, and checked the 390px mobile composition for overflow. Updated `docs/previews/home-desktop.webp`, `home-mobile.webp`, `process-shape.webp` and `process-realize.webp`.
 
 Known environment limits and historical baseline checks follow below. No deployment or contact delivery was added by this motion update.
 
 ---
-
 ## Previous verification — 0.1.0
 
 Performed locally on **2026-10-04**, macOS arm64, Node 26.5.1. Production browser checks use Chromium 153 through Playwright 1.63 and the built static site on `127.0.0.1:4174`.

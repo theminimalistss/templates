@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 — 2026-10-05
+
+- Make the header part of the hero entrance. As the images recede, they pass across the header band, and the wordmark, navigation and contact link come in from in front of the viewer toward the main image. The header rule draws outward from that same point.
+- Header focus during the entrance shows the header immediately; reduced motion keeps the header static.
+- Verify the header entrance and its resting state in the browser suite.
+
 ## 0.2.0 — 2026-10-05
 
 - Amplify hero depth with opposing media layers, perspective and damped pointer movement.

@@ -11,11 +11,22 @@ test("hero brings in the media before the headline and responds with opposing de
     "opacity",
     "0",
   );
+  await expect(page.locator(".header .wordmark")).toHaveCSS(
+    "animation-name",
+    "header-emerge",
+  );
+  await expect(hero).toHaveCSS("overflow", "visible");
   await expect(hero).toHaveAttribute("data-hero-phase", "ready");
   await expect(page.locator(".hero-title-word").first()).toHaveCSS(
     "opacity",
     "1",
   );
+  await expect(page.locator(".header .wordmark")).toHaveCSS("opacity", "1");
+  await expect(page.locator(".header .wordmark")).toHaveCSS(
+    "transform",
+    "none",
+  );
+  await expect(hero).toHaveCSS("overflow", "hidden");
   await page.mouse.move(1380, 550);
   await expect
     .poll(() =>

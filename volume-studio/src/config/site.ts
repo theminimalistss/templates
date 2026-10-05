@@ -5,7 +5,7 @@ export const site = {
   ).replace(/\/$/, ""),
   email: "hello@volume-studio.example",
   descriptor: "Interior architecture / Spatial design",
-  version: "0.2.0",
+  version: "0.3.0",
   socialLinks: [
     { label: "Instagram", href: "https://www.instagram.com/" },
     { label: "Pinterest", href: "https://www.pinterest.com/" },

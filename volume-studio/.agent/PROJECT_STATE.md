@@ -1,8 +1,9 @@
 # Project state
 
-- Version: **0.2.0**
-- Status: Complete and verified local implementation. Build/lint/types pass; 44 unit/component tests and 47 browser checks pass; core service coverage is 100%. Lighthouse: mobile 97/100/100/100, desktop 100/100/100/100. See `docs/verification.md`.
-- Latest verification: 2026-10-05, motion update passes all 47 browser tests together in 16.0 seconds, 44 unit/component tests, build/lint/types and fresh Lighthouse audits. Desktop/mobile hero and revised process drawings visually reviewed.
+- Version: **0.3.0**
+- Status: Complete and verified local implementation. Build/lint/types pass; 44 unit/component tests pass; 51 of 52 browser checks pass (the `/services` expertise-text hover check fails and predates 0.3.0, see `.agent/TODO.md`); core service coverage is 100%. Lighthouse: mobile 97/100/100/100, desktop 100/100/100/100. See `docs/verification.md`.
+- Latest verification: 2026-10-05, 0.3.0 header entrance: build/lint/types, 44 unit/component tests, 51 of 52 browser tests and fresh Lighthouse audits. Desktop (1440px) and mobile (390px) entrance frames visually reviewed.
+- Header entrance (0.3.0): during the hero intro the header shares its camera. Its items converge on the main image's vanishing point from in front of the viewer, and the receding imagery passes across the header band. Coupled purely in CSS through `:root:has(.hero[data-hero-phase])` in `src/ui/styles/motion.css`.
 - Motion update: staggered image-first entrance, stronger damped opposing hero depth, automatic masked project transitions with pause/resume, scroll typography/image/film storytelling, and meaningful Shape/Realize illustrations. Reduced motion and native scrolling remain supported.
 - Active route: `/` (homepage). All requested route patterns are implemented.
 - Previous verification: 2026-10-05, committed implementation `5003201` rebuilt successfully; full 42-test browser suite passed together. Development preview restarted at `http://127.0.0.1:5174/`.
