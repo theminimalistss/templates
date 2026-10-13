@@ -1,8 +1,8 @@
 # Maison Vielle
 
-Version 0.2.0 (see `VERSION`).
+Version 0.2.2 (see `VERSION`).
 
-An editorial luxury wedding-estate website inspired by Adovasio and Linka. Built with React 19, TypeScript, Vinext and Vite.
+An editorial luxury wedding-estate website inspired by Adovasio and Linka. Built with React 19, TypeScript and Next.js, with a static export for Hostinger.
 
 ## Highlights
 
@@ -15,7 +15,7 @@ An editorial luxury wedding-estate website inspired by Adovasio and Linka. Built
 
 ## Run
 
-Requires Node 22.13 or newer.
+Requires Node 22.13 or newer (Node 22 LTS recommended). Run these commands inside the `maison-vielle` directory.
 
 ```sh
 npm ci
@@ -30,6 +30,18 @@ npm run lint
 npm run build
 npm run media:inspect
 ```
+
+## Hostinger deployment
+
+```sh
+npm run package:hostinger
+```
+
+Upload `release/maison-vielle-hostinger.zip` to your domain’s `public_html` folder and extract it there. `index.html` must sit directly inside `public_html`. The build also creates `dist/`; you can upload its contents instead. Node.js is not required on the hosting server.
+
+Run `npm start` (or `npm run preview`) to preview the built static website at http://localhost:4173.
+
+See [Hostinger setup and troubleshooting](docs/hostinger.md) for the complete instructions.
 
 ## Customize
 

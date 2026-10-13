@@ -1,0 +1,10 @@
+# Hostinger Apache/LiteSpeed: serve the exported homepage and static 404 page.
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType image/webp .webp
+  AddType video/webm .webm
+  AddType font/woff2 .woff2
+</IfModule>

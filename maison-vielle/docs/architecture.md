@@ -1,10 +1,10 @@
 # Architecture
 
-Maison Vielle is a fictional luxury wedding estate template built with React 19, TypeScript and Vinext/Vite. Source lives in this project directory. It can run locally or as a Cloudflare Worker through Sites. The current version is in `VERSION`, mirrored in `package.json` and `package-lock.json`.
+Maison Vielle is a fictional luxury wedding estate template built with React 19, TypeScript and Next.js. Source lives in this project directory. `next build` prerenders the page and exports HTML/CSS/JS into `dist/` for standard static hosting, including Hostinger. The former Vinext/Cloudflare runtime adapters have been removed. The current version is in `VERSION`, mirrored in `package.json` and `package-lock.json`.
 
 ## Structure
 
-- `app/page.tsx`: server-rendered editorial homepage and section content.
+- `app/page.tsx`: build-time-rendered editorial homepage and section content.
 - `app/globals.css`: ivory/olive design tokens, responsive composition, typography and motion. Local Cormorant Garamond and Manrope fonts.
 - `components/maison/responsive-image.tsx`: AVIF/WebP sources, responsive sizes, intrinsic dimensions, positioning, fit, decoding and priority.
 - `components/maison/motion.tsx`: scroll reveals (`data-reveal="fade-up|rise|fade|image|lines|gallery"`, `data-rule`), `data-parallax="pixels"` effects, the hero's scroll progress (`--hero-progress`), pinned-section progress (`data-scrub` → `--scrub`) and the end-of-intro flag (`html.intro-done`).
@@ -69,3 +69,9 @@ Maison Vielle, its Provence location, coordinates, 1892 date, guest capacity, we
 ## Design references
 
 [Adovasio](https://www.adovasio.it/) informed the photographic editorial rhythm and expressive serif hierarchy. [Linka](https://linkaproduction.com/) informed immersive visual sections and controlled movement. Their code, media and brand elements were not copied.
+
+## Build and hosting
+
+`npm run dev` runs native Next.js on port 5173. `npm run build` uses the webpack compiler and `output: "export"` and `distDir: "dist"`, then verifies the generated homepage and referenced files. `trailingSlash: true` emits directory index pages; local media remains pre-optimized by Sharp. `npm start`/`npm run preview` use a static file server on port 4173, so local production checks match the Hostinger deployment. `npm run package:hostinger` creates a cross-platform ZIP using fflate with no enclosing `dist` directory.
+
+The earlier `.openai/hosting.json` is retained only as a record of the old private Sites preview; it is not read by the current build or included in the upload. Cloudflare Workers, D1, connectors, Wrangler and execution-profile tooling are no longer part of the application. All existing visual components, motion and browser interactions are retained. See `hostinger.md` for deployment.

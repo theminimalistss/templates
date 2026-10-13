@@ -1,5 +1,27 @@
 # Verification
 
+## Static output directory — 0.2.2 (2026-10-14)
+
+- Static export now targets `dist/`; start, preview, verifier and ZIP packaging all use that directory.
+- Typecheck and full Hostinger build/package passed: 108 files, 11.28 MiB; ZIP 10.35 MiB.
+- ZIP contains `index.html` and `.htaccess` at its root, with no extra dist/out directory or Worker server files.
+- The previous ignored `out/` export was removed; the build replaced the old dist/server Worker output.
+- Development and static preview returned HTTP 200 after the path change.
+- The 0.2.1 results below describe the prior migration and its earlier folder name.
+
+## Hostinger migration — 0.2.1 (2026-10-14)
+
+- Clean `npm ci`, `npm run typecheck`, and `npm run package:hostinger` passed.
+- Native Next.js prerendered the homepage and 404 page into `out/`; export verification checked 108 files (11.28 MiB).
+- `release/maison-vielle-hostinger.zip` created (10.35 MiB), with `index.html` and `.htaccess` at the root.
+- `npm run dev` returned HTTP 200. `npm start` served the exported static files; unknown URLs returned 404.
+- Playwright/Chrome on static output at 1440×1000 and 390×844: gallery filters, lightbox buttons/keyboard, inquiry download, film, reduced-motion behavior, mobile navigation, no-JavaScript content and local media passed.
+- No runtime errors, failed asset requests, external runtime dependencies or horizontal overflow observed.
+- Existing layout, motion, content and media source files were preserved.
+- Media audit and whitespace checks passed. No Hostinger account deployment was attempted; the deliverable is the tested upload package.
+
+## Previous visual release
+
 Version 0.2.0, checked 2026-10-03 in local Chrome using Playwright.
 
 ## Build and code
