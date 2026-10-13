@@ -42,7 +42,7 @@ This rebuilds the site and creates `release/maison-vielle-hostinger.zip`. The ZI
 5. Check that the resulting path is **`public_html/index.html`**, not `public_html/dist/index.html` or another nested directory. Keep `_next`, `media`, `fonts`, `favicon.svg`, `404.html` and `.htaccess` alongside it.
 6. Remove the uploaded ZIP after extraction. Open your domain, then test the mobile menu, gallery and inquiry download. If an old version is still shown, clear the Hostinger cache and refresh your browser.
 
-Alternatively, upload all **contents** of `dist/` directly, including hidden `.htaccess`. The current asset URLs target the root of a domain or subdomain, not a subdirectory such as `/maison-vielle/`.
+Alternatively, upload all **contents** of `dist/` directly, including hidden `.htaccess` but excluding the `dev` folder (the local dev server's build). The current asset URLs target the root of a domain or subdomain, not a subdirectory such as `/maison-vielle/`.
 
 The `.htaccess` file selects `index.html`, configures the static 404 page and provides modern media MIME types for Apache/LiteSpeed. Static hosts that ignore `.htaccess` can still serve the website; configure their 404 handling separately if needed.
 
@@ -66,4 +66,4 @@ Edit the source, run `npm run package:hostinger` again and replace the deployed 
 - [Hostinger: upload a website using File Manager](https://www.hostinger.com/support/how-to-upload-a-website-from-backups/)
 - [Hostinger: add a website and select its platform](https://www.hostinger.com/support/1583214-how-to-add-a-website-in-hostinger/)
 
-Development uses `.next` for its cache and generated types, while production exports to `dist`. The export verifier rejects development caches and Worker/server files in `dist`, so the upload ZIP cannot accidentally include them. The development server was checked after the production build to confirm it leaves `dist` unchanged.
+Everything Next.js generates lives in `dist`; there is no `.next` folder. `npm run build` writes the static site to the root of `dist`, and `npm run dev` keeps its own isolated build in `dist/dev`, so the two never overwrite each other. `dist/dev` is local-only: the export verifier skips it, and `npm run package:hostinger` leaves it out of the ZIP. If you upload `dist` by hand instead of the ZIP, leave out the `dev` folder. The verifier still rejects server or cache files at the root of `dist`.

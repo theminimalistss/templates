@@ -3,6 +3,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const exportDirectory = fileURLToPath(new URL('../dist/', import.meta.url));
+/** `next dev` keeps its own build in dist/dev. It is local-only: never verified, counted or uploaded. */
+export const devDirectory = 'dev';
+export const isUploadEntry = (relativePath) => relativePath.split(/[\\/]/)[0] !== devDirectory && path.basename(relativePath) !== '.DS_Store';
 
 export async function verifyExport() {
   const required = ['index.html', '404.html', '.htaccess', '_next/static', 'media', 'fonts'];
@@ -12,9 +15,9 @@ export async function verifyExport() {
   }
 
   const rootEntries = await readdir(exportDirectory);
-  const runtimeFiles = ['dev', 'server', 'cache', 'BUILD_ID', 'wrangler.json'];
+  const runtimeFiles = ['server', 'cache', 'BUILD_ID', 'wrangler.json'];
   if (rootEntries.some(name => runtimeFiles.includes(name))) {
-    throw new Error('dist contains development or server files. Run npm run build to regenerate a clean static export.');
+    throw new Error('dist contains server or cache files. Run npm run build to regenerate a clean static export.');
   }
 
   const html = await readFile(path.join(exportDirectory, 'index.html'), 'utf8');
@@ -42,12 +45,13 @@ export async function verifyExport() {
   async function inspect(directory) {
     for (const entry of await readdir(directory, { withFileTypes: true })) {
       const filename = path.join(directory, entry.name);
+      if (!isUploadEntry(path.relative(exportDirectory, filename))) continue;
       if (entry.isDirectory()) await inspect(filename);
       else if (entry.isFile()) { count++; bytes += (await stat(filename)).size; }
     }
   }
   await inspect(exportDirectory);
-  console.log(`Static export verified: ${count} files, ${(bytes / 1024 / 1024).toFixed(2)} MiB. Upload the contents of dist/ to public_html/.`);
+  console.log(`Static export verified: ${count} files, ${(bytes / 1024 / 1024).toFixed(2)} MiB. Upload the contents of dist/ (except dev/) to public_html/, or use npm run package:hostinger.`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

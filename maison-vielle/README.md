@@ -37,7 +37,7 @@ npm run media:inspect
 npm run package:hostinger
 ```
 
-Upload `release/maison-vielle-hostinger.zip` to your domain’s `public_html` folder and extract it there. `index.html` must sit directly inside `public_html`. The build also creates `dist/`; you can upload its contents instead. Node.js is not required on the hosting server.
+Upload `release/maison-vielle-hostinger.zip` to your domain’s `public_html` folder and extract it there. `index.html` must sit directly inside `public_html`. The build also creates `dist/`; you can upload its contents instead, leaving out `dist/dev`, which is the local dev server's build. Node.js is not required on the hosting server.
 
 Run `npm start` (or `npm run preview`) to preview the built static website at http://localhost:4173.
 
