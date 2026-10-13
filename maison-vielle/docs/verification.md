@@ -66,3 +66,5 @@ Version 0.2.0, checked 2026-10-03 in local Chrome using Playwright.
 - Film: local WebM reaches readyState 4, is muted, closes with Escape. No autoplay attribute under reduced motion.
 
 This is functional and visual local verification, not a field Core Web Vitals claim. Measure real-user LCP/CLS/INP after a real production launch and connect genuine venue content and inquiry delivery first. Drag-to-close was exercised with simulated touch events; confirm it once on a physical iPhone, where Safari handles touch scrolling differently.
+
+Development uses `.next` for its cache and generated types, while production exports to `dist`. The export verifier rejects development caches and Worker/server files in `dist`, so the upload ZIP cannot accidentally include them. The development server was checked after the production build to confirm it leaves `dist` unchanged.

@@ -11,6 +11,12 @@ export async function verifyExport() {
     catch { throw new Error(`Missing dist/${name}. Run npm run build before uploading.`); }
   }
 
+  const rootEntries = await readdir(exportDirectory);
+  const runtimeFiles = ['dev', 'server', 'cache', 'BUILD_ID', 'wrangler.json'];
+  if (rootEntries.some(name => runtimeFiles.includes(name))) {
+    throw new Error('dist contains development or server files. Run npm run build to regenerate a clean static export.');
+  }
+
   const html = await readFile(path.join(exportDirectory, 'index.html'), 'utf8');
   if (!html.includes('Maison Vielle') || !html.includes('id="main"')) {
     throw new Error('The export must contain the rendered venue page, not an empty app shell.');

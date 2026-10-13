@@ -21,3 +21,5 @@ Changed the static export directory from Next.js's default `out` to the requeste
 - Local development and static preview routes checked after the folder change.
 
 The previously completed desktop/mobile interaction checks remain applicable; this change only affects export, preview and packaging paths. Generated dist/release files remain ignored by Git and can be regenerated with the documented commands.
+
+Development uses `.next` for its cache and generated types, while production exports to `dist`. The export verifier rejects development caches and Worker/server files in `dist`, so the upload ZIP cannot accidentally include them. The development server was checked after the production build to confirm it leaves `dist` unchanged.

@@ -72,6 +72,8 @@ Maison Vielle, its Provence location, coordinates, 1892 date, guest capacity, we
 
 ## Build and hosting
 
-`npm run dev` runs native Next.js on port 5173. `npm run build` uses the webpack compiler and `output: "export"` and `distDir: "dist"`, then verifies the generated homepage and referenced files. `trailingSlash: true` emits directory index pages; local media remains pre-optimized by Sharp. `npm start`/`npm run preview` use a static file server on port 4173, so local production checks match the Hostinger deployment. `npm run package:hostinger` creates a cross-platform ZIP using fflate with no enclosing `dist` directory.
+`npm run dev` runs native Next.js on port 5173. `npm run build` uses the webpack compiler and `output: "export"` and `distDir: "dist"` for production, then verifies the generated homepage and referenced files. `trailingSlash: true` emits directory index pages; local media remains pre-optimized by Sharp. `npm start`/`npm run preview` use a static file server on port 4173, so local production checks match the Hostinger deployment. `npm run package:hostinger` creates a cross-platform ZIP using fflate with no enclosing `dist` directory.
 
 The earlier `.openai/hosting.json` is retained only as a record of the old private Sites preview; it is not read by the current build or included in the upload. Cloudflare Workers, D1, connectors, Wrangler and execution-profile tooling are no longer part of the application. All existing visual components, motion and browser interactions are retained. See `hostinger.md` for deployment.
+
+Development uses `.next` for its cache and generated types, while production exports to `dist`. The export verifier rejects development caches and Worker/server files in `dist`, so the upload ZIP cannot accidentally include them. The development server was checked after the production build to confirm it leaves `dist` unchanged.

@@ -65,3 +65,5 @@ Edit the source, run `npm run package:hostinger` again and replace the deployed 
 - [Next.js static exports](https://nextjs.org/docs/app/guides/static-exports)
 - [Hostinger: upload a website using File Manager](https://www.hostinger.com/support/how-to-upload-a-website-from-backups/)
 - [Hostinger: add a website and select its platform](https://www.hostinger.com/support/1583214-how-to-add-a-website-in-hostinger/)
+
+Development uses `.next` for its cache and generated types, while production exports to `dist`. The export verifier rejects development caches and Worker/server files in `dist`, so the upload ZIP cannot accidentally include them. The development server was checked after the production build to confirm it leaves `dist` unchanged.

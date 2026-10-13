@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
-const nextConfig: NextConfig = {
-  // Generate HTML/CSS/JS that Hostinger can serve without a Node or Worker runtime.
-  output: "export",
-  distDir: "dist",
-  trailingSlash: true,
-  images: { unoptimized: true },
-};
-
-export default nextConfig;
+export default function nextConfig(phase: string): NextConfig {
+  return {
+    // Export upload-ready files to dist, but keep development caches in .next.
+    output: "export",
+    distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next" : "dist",
+    trailingSlash: true,
+    images: { unoptimized: true },
+  };
+}
